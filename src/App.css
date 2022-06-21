@@ -1,38 +1,145 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+body {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #3a3a3a;
+  width: 300px;
+  height: 720px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-color: #a15050;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.szymon {
+  width: 60%;
+
+}
+
+header {
+  background-color: #232323;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+header > h1 {
+  color: #a15050;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header > h4 {
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  padding: 3px;
+  margin-top: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttonsContainer {
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buttonsContainer > a {
+  display: flex;
+  width: 120px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+.buttonsContainer > a > img {
+  width: 25px;
+  margin-right: 7px;
+}
+
+.fxbtn {
+  background-color: #a15050;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fxbtn:hover {
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inbtn {
+  background-color: white;
+  color: #0073b1;
+}
+
+.inbtn:hover {
+  background-color: black;
+}
+
+.skills {
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-start;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills > h2 {
+  color: #a15050;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.progress {
+  background-color: #232323;
+  border-radius: 40px;
+  width: 100%;
+}
+
+.progress > div {
+  background-color: #a15050;
+  height: 5px;
+  border-radius: 40px;
+}
+
+label {
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+footer {
+  background-color: #232323;
+  height: 80px;
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > a {
+  margin: 20px;
 }
